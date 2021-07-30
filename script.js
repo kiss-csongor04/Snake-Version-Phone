@@ -172,3 +172,75 @@ window.addEventListener("keydown", (event) => {
 window.addEventListener("keyup", (event) => {
   input[event.key] = false;
 });
+
+function le () {
+  if (snake.dir.y !== 1) {
+    snake.newDir = { x: 0, y: 1 };
+
+  snake.moveElapsed += delta;
+  if (snake.moveElapsed > move_interval) {
+    snake.dir = snake.newDir;
+    snake.moveElapsed -= move_interval;
+    const newsnakepart = {
+      x: snake.parts[0].x + snake.dir.x,
+      y: snake.parts[0].y + snake.dir.y,
+    };
+    snake.parts.unshift(newsnakepart);}}}
+
+  function le () {
+    if (snake.dir.y !== 1) {
+    snake.newDir = { x: 0, y: 1 };
+
+    snake.moveElapsed += delta;
+    if (snake.moveElapsed > move_interval) {
+    snake.dir = snake.newDir;
+    snake.moveElapsed -= move_interval;
+    const newsnakepart = {
+      x: snake.parts[0].x + snake.dir.x,
+      y: snake.parts[0].y + snake.dir.y,
+    };
+    snake.parts.unshift(newsnakepart);}}}
+    
+    function fel () {
+      if (snake.dir.y !== -1) {
+        snake.newDir = { x: 0, y: -1 };
+    
+      snake.moveElapsed += delta;
+      if (snake.moveElapsed > move_interval) {
+        snake.dir = snake.newDir;
+        snake.moveElapsed -= move_interval;
+        const newsnakepart = {
+          x: snake.parts[0].x + snake.dir.x,
+          y: snake.parts[0].y + snake.dir.y,
+        };
+        snake.parts.unshift(newsnakepart);}}}
+
+    function balra () {
+      if (snake.dir.x !== -1) {
+          snake.newDir = { x: -1, y: 0 };
+        
+          snake.moveElapsed += delta;
+          if (snake.moveElapsed > move_interval) {
+            snake.dir = snake.newDir;
+            snake.moveElapsed -= move_interval;
+            const newsnakepart = {
+              x: snake.parts[0].x + snake.dir.x,
+              y: snake.parts[0].y + snake.dir.y,
+            };
+            snake.parts.unshift(newsnakepart);}}}
+
+    function jobbra () {
+              if (snake.dir.x !== 1) {
+                  snake.newDir = { x: 1, y: 0 };
+                
+                  snake.moveElapsed += delta;
+                  if (snake.moveElapsed > move_interval) {
+                    snake.dir = snake.newDir;
+                    snake.moveElapsed -= move_interval;
+                    const newsnakepart = {
+                      x: snake.parts[0].x + snake.dir.x,
+                      y: snake.parts[0].y + snake.dir.y,
+                    };
+                    snake.parts.unshift(newsnakepart);}}}
+
+
